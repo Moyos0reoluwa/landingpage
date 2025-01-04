@@ -3,11 +3,8 @@
 import React, { FC, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Using Menu for the two-dash icon
-
 import Link from "next/link";
 import MaxwidthWrapper from "../Min_Max_Width_Wrapper";
-
-// interface NavbarProps {}
 
 const Navbar: FC = () => {
   const navbarItems = [
