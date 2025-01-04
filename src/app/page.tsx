@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import VisionSection from "@/components/VisionSection";
 import Installation from "@/components/Installation";
-import Pastor from "@/components/Pastor";
 import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
@@ -25,7 +24,6 @@ const HomePage = () => {
           <AboutSection />
           <VisionSection />
           <Installation />
-          <Pastor />
         </main>
         <Footer />
       </div>
