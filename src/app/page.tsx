@@ -1,34 +1,36 @@
-//import MaxwidthWrapper from "@/components/Min_Max_Width_Wrapper";
+import React from "react";
+import Head from "next/head";
 import DesktopNavbar from "@/components/navbar/DesktopNavbar";
-//import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/Hero";
-//import HomeHeroSlider from "../components/HomeHeroSlider";
-//import HomeContent from "@/components/HomeContent";
 import AboutSection from "@/components/AboutSection";
 import VisionSection from "@/components/VisionSection";
 import Installation from "@/components/Installation";
 import Pastor from "@/components/Pastor";
 import Footer from "@/components/footer/Footer";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className="">
-      {/* <MaxwidthWrapper> */}
-        <main className="">
-        {/* <DesktopNavbar />
-        <Navbar /> */}
+    <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+      </Head>
+      <div className="font-roboto">
+        <main className="overflow-hidden">
           <DesktopNavbar />
-          {/* <Navbar /> */}
+          <Navbar />
           <Hero />
-          {/* <HomeHeroSlider /> */}
-          {/* <HomeContent /> */}
           <AboutSection />
           <VisionSection />
           <Installation />
           <Pastor />
         </main>
-        <Footer/>
-      {/* </MaxwidthWrapper> */}
-    </div>
+        <Footer />
+      </div>
+    </>
   );
-}
+};
+
+export default HomePage;

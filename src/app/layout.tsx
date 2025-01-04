@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.css"; 
 import { Toaster } from "@/components/ui/toaster";
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Word Sanctuary Central Systems",
@@ -25,14 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > */}
-      <body
-        className={`m-0 p-0 antialiased`}
-      >
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+      </Head>
+      <body className="font-roboto m-0 p-0 antialiased">
         {children}
-        <Toaster/>
+        <Toaster />
       </body>
     </html>
   );

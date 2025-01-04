@@ -8,7 +8,7 @@ const Installation: FC = () => {
     { location: "Ilorin", churches: "7 churches", imgSrc: "/assets/ilorin.jpg" },
     { location: "Lagos", churches: "1 church", imgSrc: "/assets/lagos.jpg" },
     { location: "Abuja", churches: "3 churches", imgSrc: "/assets/abuja.jpg" },
-    { location: "Ibadan", churches: "3 churches", imgSrc: "/assets/ibadan.jpg" },
+    { location: "Ibadan", churches: "2 churches", imgSrc: "/assets/ibadan.jpg" },
     { location: "USA", churches: "1 church", imgSrc: "/assets/usa.jpg" },
   ];
 

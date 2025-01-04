@@ -39,7 +39,7 @@ const VisionSection: FC = () => {
         <div className="mb-10">
           <h3 className="text-3xl md:text-4xl text-white">OUR MISSION</h3>
           <p className="text-xl md:text-2xl font-semibold text-white mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          A gathering of achievers
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const VisionSection: FC = () => {
         <div>
           <h3 className="text-3xl md:text-4xl text-white">OUR MANDATE</h3>
           <p className="text-xl md:text-2xl font-semibold text-white mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Making a Family For God On Earth.
           </p>
         </div>
       </div>
