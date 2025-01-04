@@ -5,8 +5,6 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Using Menu for the two-dash icon
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 import MaxwidthWrapper from "../Min_Max_Width_Wrapper";
 
 // interface NavbarProps {}
@@ -21,16 +19,6 @@ const Navbar: FC = () => {
   ];
 
   const [openNavbar, setOpenNavbar] = useState<boolean>(false);
-  const [isUser, setIsUser] = useState<boolean>(false);
-
-  const currentPath = usePathname();
-  // const { isLoading, data, error } = trpc.auth.getUserSession.useQuery();
-
-  // useEffect(() => {
-  //   if (typeof data === "object" && data !== null && "kindeDetails" in data) {
-  //     setIsUser(true);
-  //   }
-  // }, [isLoading, data]);
 
   return (
     <nav className="md:hidden w-full bg-primarycol shadow-lg">

@@ -11,7 +11,7 @@ const DesktopNavbar: FC = () => {
     { text: "About", link: "about-us" },
     { text: "Installations", link: "installation" },
     { text: "Services", link: "services" },
-    { text: "Onboard", link: "onboard" },
+    { text: "Sign In", link: "sign-in" }, // Replacing "Onboard" with "Sign In"
   ];
 
   return (
