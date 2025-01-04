@@ -17,37 +17,49 @@ const VisionSection: FC = () => {
             alt="Vision Background"
             layout="fill"
             objectFit="cover"
-            className="object-cover opacity-60" // Further reduce opacity
+            className="object-cover opacity-60"
           />
-          <div className="absolute inset-0 w-full h-full bg-primarycol mix-blend-overlay"></div> {/* Adjust blend mode */}
+          <div className="absolute inset-0 w-full h-full bg-primarycol mix-blend-overlay"></div>
         </div>
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-primarycol to-transparent"></div> {/* Gradient overlay */}
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-primarycol to-transparent"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center w-full h-full px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center uppercase text-center w-full h-full px-6">
         {/* Vision */}
         <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl text-white">OUR VISION</h2>
-          <p className="text-2xl md:text-3xl font-semibold text-white mt-4">
-            A CHURCH THAT <span className="bg-white text-purple-950 px-2">IS HEAVEN!</span>
+          <h2 className="text-[clamp(24px, 5vw, 40px)] font-normal text-white">VISION</h2>
+          <p className="text-[clamp(16px, 4vw, 28px)] font-bold text-white mt-4">
+            A CHURCH THAT{" "}
+            <span className="relative">
+              <span className="absolute inset-0 -z-10">
+                <Image
+                  src="/assets/heaven.jpg"
+                  alt="Heaven Background"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-md"
+                />
+              </span>
+              <span className="relative bg-opacity-75 px-2 text-primarycol">IS HEAVEN!</span>
+            </span>
           </p>
         </div>
 
         {/* Mission */}
         <div className="mb-10">
-          <h3 className="text-3xl md:text-4xl text-white">OUR MISSION</h3>
-          <p className="text-xl md:text-2xl font-semibold text-white mt-4">
-          A gathering of achievers
+          <h3 className="text-[clamp(24px, 5vw, 40px)] font-normal text-white">MISSION</h3>
+          <p className="text-[clamp(16px, 4vw, 28px)] font-bold text-white mt-4">
+            A gathering of achievers
           </p>
         </div>
 
         {/* Mandate */}
         <div>
-          <h3 className="text-3xl md:text-4xl text-white">OUR MANDATE</h3>
-          <p className="text-xl md:text-2xl font-semibold text-white mt-4">
-          Making a Family For God On Earth.
+          <h3 className="text-[clamp(24px, 5vw, 40px)] font-normal text-white">MANDATE</h3>
+          <p className="text-[clamp(16px, 4vw, 28px)] font-bold text-white mt-4">
+            Making a Family For God On Earth.
           </p>
         </div>
       </div>
